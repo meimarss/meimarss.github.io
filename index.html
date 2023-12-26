@@ -1,35 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <script>
-        let words = prompt("Введіть три слова через пробіл:").split(' ');
-        let result = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-        console.log(result);
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <h1 id="header"></h1>
 
-        let num1 = parseFloat(prompt("Введіть перше число:"));
-        let num2 = parseFloat(prompt("Введіть друге число:"));
-
-        console.log(`Сума: ${num1 + num2}`);
-        console.log(`Різниця: ${num1 - num2}`);
-        console.log(`Добуток: ${num1 * num2}`);
-        console.log(`Частка: ${num1 / num2}`);
-
-
-        let totalApples = parseInt(prompt("Введіть загальну кількість яблук:"));
-        let applesPerBox = parseInt(prompt("Введіть кількість яблук у ящику:"));
-
-        let boxesNeeded = Math.floor(totalApples / applesPerBox);
-        let remainingApples = totalApples % applesPerBox;
-
-        console.log(`Потрібно ящиків: ${boxesNeeded}`);
-        console.log(`Залишиться яблук: ${remainingApples}`);
-
-    </script>
-</body>
+    <script src="src/script.js"></script>
+  </body>
 </html>
